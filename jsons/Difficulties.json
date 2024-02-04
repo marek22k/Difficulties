@@ -1,0 +1,40 @@
+[
+    {
+		"name": "Same start for everyone",
+
+        /* Give everyone five additional starting units. */
+        "playerBonusStartingUnits": ["Era Starting Unit", "Era Starting Unit", "Worker", "Settler", "Scout"],
+        "aiMajorCivBonusStartingUnits": ["Era Starting Unit", "Era Starting Unit", "Worker", "Settler", "Scout"],
+        /* Since we can't give city-states settlers, give them another worker. */
+        "aiCityStateBonusStartingUnits": ["Era Starting Unit", "Era Starting Unit", "Worker", "Worker", "Scout"],
+
+        "unitCostModifier": 1,
+        "aiUnitCostModifier": 1,
+
+        "buildingCostModifier": 1,
+        "aiBuildingCostModifier": 1,
+
+        "unitSupplyBase": 5,
+        "aiUnitSupplyModifier": 5,
+
+        "aiFreeTechs": [] /* None, because no one else gets any. */
+    },
+    {
+		"name": "No disadvantage without an advantage",
+
+        /* Advantage */
+        "playerBonusStartingUnits": ["Era Starting Unit", "Era Starting Unit", "Worker", "Settler", "Scout"],
+        "aiCityStateBonusStartingUnits": ["Worker"],
+
+        "unitCostModifier": 1,
+        "aiUnitCostModifier": 1,
+
+        "buildingCostModifier": 1,
+        "aiBuildingCostModifier": 1,
+
+        "unitSupplyBase": 5,
+        "aiUnitSupplyModifier": 5,
+
+        "aiFreeTechs": ["Pottery"]
+    }
+]
